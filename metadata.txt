@@ -1,7 +1,7 @@
 [general]
 name=PostGIS Sampling Tool
 description=Management of triggers in PostGIS database to copy attributes based on spatial relation
-version=1.5
+version=1.5.1
 qgisMinimumVersion=3.0
 qgisMaximumVersion=3.99
 author=Martin Dobias for RaumRegionMensch
