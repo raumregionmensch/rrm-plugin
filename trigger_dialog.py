@@ -31,8 +31,7 @@ def get_table_fields(conn, schema, table):
                             a.attlen AS char_max_len,
                             a.atttypmod AS modifier,
                             a.attnotnull AS notnull,
-                            a.atthasdef AS hasdefault,
-                            adef.adsrc AS default_value,
+                            a.atthasdef AS hasdefault,  
                             pg_catalog.format_type(a.atttypid,a.atttypmod) AS formatted_type
                     FROM pg_class c
                     JOIN pg_attribute a ON a.attrelid = c.oid
